@@ -1,0 +1,7 @@
+
+# install dependencies
+uv add requests minsearch openai jupyter python-dotenv gitsource
+
+wget https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/01-agentic-rag/code/rag_helper.py
+
+uv add toyaikit
