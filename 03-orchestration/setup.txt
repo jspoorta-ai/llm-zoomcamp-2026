@@ -1,0 +1,4 @@
+
+docker --version
+
+wget https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/03-orchestration/docker-compose.yml
