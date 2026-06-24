@@ -1,0 +1,11 @@
+
+mkdir llm-zoomcamp-hw2 && cd llm-zoomcamp-hw2
+uv init --no-workspace
+uv add onnxruntime tokenizers numpy tqdm minsearch gitsource
+uv add --dev huggingface-hub jupyter
+
+PREFIX=https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/02-vector-search/embed
+wget $PREFIX/download.py
+wget $PREFIX/embedder.py
+
+uv run python download.py
