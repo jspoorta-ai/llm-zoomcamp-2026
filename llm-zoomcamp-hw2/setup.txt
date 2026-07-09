@@ -1,4 +1,5 @@
 
+## hw2
 mkdir llm-zoomcamp-hw2 && cd llm-zoomcamp-hw2
 uv init --no-workspace
 uv add onnxruntime tokenizers numpy tqdm minsearch gitsource
@@ -9,3 +10,12 @@ wget $PREFIX/download.py
 wget $PREFIX/embedder.py
 
 uv run python download.py
+
+## hw4
+uv add openai pydantic python-dotenv pandas
+PREFIX=https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main
+wget ${PREFIX}/01-agentic-rag/code/rag_helper.py
+wget ${PREFIX}/04-evaluation/code/evaluation_utils.py
+
+PREFIX=https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main
+wget ${PREFIX}/cohorts/2026/04-evaluation/ground-truth.csv
