@@ -32,6 +32,7 @@ class RAGTraced(RAGBase):
             span.set_attribute("output_tokens", response.usage.output_tokens)
             return response
 
+
 COMMIT = "8c1834d"
 
 # --- Load the course lessons (same as HW1, HW2, HW4) ---
