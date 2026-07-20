@@ -1,0 +1,29 @@
+uv run python - <<'PY'
+import duckdb
+conn = duckdb.connect("logfire.duckdb")
+print(conn.execute("SHOW TABLES").fetchall())
+conn.close()
+PY
+
+#print(conn.execute("SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'agent_traces';").fetchdf())
+
+uv run python - <<'PY'
+import duckdb
+conn = duckdb.connect("logfire.duckdb")
+print(conn.execute("SELECT COUNT(*) FROM metrics").fetchall())
+conn.close()
+PY
+
+uv run python - <<'PY'
+import duckdb
+conn = duckdb.connect("logfire.duckdb")
+print(conn.execute("SELECT COUNT(*) FROM records").fetchall())
+conn.close()
+PY
+
+uv run python - <<'PY'
+import duckdb
+conn = duckdb.connect("logfire.duckdb")
+print(conn.execute("SELECT table_schema, table_name FROM information_schema.tables ORDER BY table_schema, table_name;").fetchall())
+conn.close()
+PY
