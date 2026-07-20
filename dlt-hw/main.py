@@ -4,6 +4,7 @@ load_dotenv()
 
 from agent import faq_agent, SearchDeps
 from ingest import build_index, load_faq_data
+from logfire_ingest import load_logfire_to_duckdb
 
 
 def main():
@@ -23,4 +24,5 @@ def main():
 
 
 if __name__ == '__main__':
+    load_logfire_to_duckdb()
     main()
