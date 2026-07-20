@@ -1,23 +1,15 @@
 [project]
-name = "llm-zoomcamp-2026"
+name = "dlt-hw"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "gitsource>=0.0.5",
-    "jupyter>=1.1.1",
+    "dlt[duckdb]>=1.29.0",
+    "logfire>=4.38.0",
     "minsearch>=0.1.1",
     "openai>=2.43.0",
-    "pandas>=3.0.3",
-    "pydantic>=2.13.4",
+    "pydantic-ai>=2.8.0",
     "python-dotenv>=1.2.2",
     "requests>=2.34.2",
-    "toyaikit>=0.0.11",
-]
-
-[tool.uv.workspace]
-members = [
-    "dlt",
-    "dlt-hw",
 ]
