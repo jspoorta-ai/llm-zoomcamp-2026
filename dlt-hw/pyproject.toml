@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "dlt[duckdb]>=1.29.0",
+    "fastmcp>=3.4.4",
     "logfire>=4.38.0",
     "minsearch>=0.1.1",
     "openai>=2.43.0",

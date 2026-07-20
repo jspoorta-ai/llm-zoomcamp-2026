@@ -3,3 +3,10 @@
 [runtime]
 log_level="WARNING"  # the system log level of dlt
 # use the dlthub_telemetry setting to enable/disable anonymous usage data reporting, see https://dlthub.com/docs/reference/telemetry
+dlthub_telemetry = true
+
+[sources.logfire]
+# Logfire Query API base URL. Use the region matching your Logfire project:
+# EU: https://logfire-eu.pydantic.dev/v1/  US: https://logfire-us.pydantic.dev/v1/
+base_url = "https://logfire-eu.pydantic.dev/v1/"
+

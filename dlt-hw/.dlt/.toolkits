@@ -1,0 +1,51 @@
+init:
+  version: 0.1.1
+  description: Shared rules, secrets handling, and workspace MCP for dlthub
+  tags:
+  - dlthub
+  - init
+  - rules
+  - secrets
+  - mcp
+  installed_at: '2026-07-20T21:28:13.365518+00:00'
+  agent: claude
+  files:
+    .claudeignore:
+      sha3_256: 1aa4dc9286dd219dcb55399f388c5ee1f940ab5e399a42b644d488cba57a9ec0
+    .claude/rules/init-dlthub-workspace.md:
+      sha3_256: bd0d85b8bf6b0e0ce454982cfa1f63baddc67cbd1f9d05254a4b6185b48643c0
+  mcp_servers:
+  - dlt-workspace-mcp
+  name: init
+rest-api-pipeline:
+  version: 0.1.1
+  description: 'Build REST API pipelines with dlt: scope, debug and validate data'
+  tags:
+  - dlthub
+  - etl
+  - data-pipeline
+  - python
+  dependencies:
+  - init
+  workflow_entry_skill: find-source
+  installed_at: '2026-07-20T21:29:53.820671+00:00'
+  agent: claude
+  files:
+    .claude/skills/adjust-endpoint/SKILL.md:
+      sha3_256: a1c003779d3a3badf4d986d170137f292df522faa7caab0c388aedde4bfd6b7f
+    .claude/skills/create-rest-api-pipeline/SKILL.md:
+      sha3_256: 86ad76aac7c754d6fc003b9bc2243a1bf43588ecec9beec3bcb4d8a4c77c26d3
+    .claude/skills/debug-pipeline/SKILL.md:
+      sha3_256: 6c97e01a401377d513d641e3c88156b8b5870ea35735c316a92ebdc583040926
+    .claude/skills/find-source/SKILL.md:
+      sha3_256: 88d4f23b81180caa64a1c0a40334251a495bdde0291ec1271b51a1347fdfb7ef
+    .claude/skills/new-endpoint/SKILL.md:
+      sha3_256: 6a3cf8cae9a11b3447fe2e5695b1809a9f91c2abf07933b42fe82d1f50b513ff
+    .claude/skills/optimize-rest-api-performance/SKILL.md:
+      sha3_256: c271078ccb5b7356b8ef95da45c6325b91abea3c09adccac98c1ba3b04a49709
+    .claude/skills/validate-data/SKILL.md:
+      sha3_256: 641a7202879d478dcc82f098216f781bbadeeb70e4b94e189249d688fe4ebba6
+    .claude/skills/view-data/SKILL.md:
+      sha3_256: cd6a3269960b5d9e221119f161a39c53774989b4fc9da7106ed6cc9cea3069c1
+    .claude/rules/rest-api-pipeline-workflow.md:
+      sha3_256: 6ef4a26b38cb6460e94ebf16536f9889d4d9ce38ebc794f6e11c533e6f1d19e6
